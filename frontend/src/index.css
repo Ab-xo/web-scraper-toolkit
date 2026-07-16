@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --bg:        #080b10;
+  --surface:   #0e1117;
+  --surface2:  #161b24;
+  --border:    #1e2530;
+  --border2:   #2a3340;
+  --text:      #e2e8f0;
+  --muted:     #64748b;
+  --accent:    #3b82f6;
+  --accent2:   #8b5cf6;
+  --green:     #22c55e;
+  --red:       #ef4444;
+  --mono:      ui-monospace, 'Cascadia Code', Consolas, monospace;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, 'Segoe UI', sans-serif;
+  font-size: 14px;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 99px; }
